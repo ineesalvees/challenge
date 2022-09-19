@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  background-color: #F1F2F6;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+.notes-container{
+  max-width: 85%;
+  margin: 25px auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+}
+
+.note {
+	background-color: #AEB8FE;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note h1 {
+  color: white;
+}
+
+.note.add {
+  width: 400px;
+  background-color: white;
+  word-wrap: break-word;
+}
+
+textarea {
+  white-space: pre-wrap;
+  background-color: white;
+  border: none;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.note-footer, .note-header, .navbar-header {
+  color: #27187E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-add {
+  color: #27187E;
+  border: none;
+  background-color:#F1F2F6;
+}
+
+.save-note {
+  color: white;
+  background-color:#AEB8FE;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.save-note:hover, .delete-icon:hover, .close-icon:hover, .button-add:hover, .edit-icon:hover, .button-edit {
+  cursor: pointer;
+}
+
+.button-edit {
+  color: #27187E;
+  border: none;
+  background-color:#AEB8FE;
+}
