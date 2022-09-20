@@ -8,11 +8,6 @@ body {
   background-color: #F1F2F6;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas,
-		'Courier New', monospace;
-}
-
 .notes-container{
   max-width: 85%;
   margin: 25px auto;
@@ -23,6 +18,7 @@ code {
 .notes-list{
   display: grid;
   grid-gap: 1rem;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
 }
 
@@ -45,6 +41,7 @@ code {
   width: 400px;
   background-color: white;
   word-wrap: break-word;
+  color: #27187E;
 }
 
 textarea {
@@ -79,7 +76,7 @@ textarea:focus {
   padding: 5px 10px;
 }
 
-.save-note:hover, .delete-icon:hover, .close-icon:hover, .button-add:hover, .edit-icon:hover, .button-edit {
+.save-note:hover, .close-icon:hover, .button-add:hover, .edit-icon:hover, .button-edit {
   cursor: pointer;
 }
 

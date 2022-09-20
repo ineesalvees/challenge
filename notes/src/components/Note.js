@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
-import EditNote from './EditNote';
+
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
-
 import axios from 'axios'
 
-const Note = (props) => {
+import EditNote from './EditNote';
 
-    const { id, body, updateNote} = props
+const Note = (props) => {
+    const API_URL = 'https://challenge.leadjet.io/blablabla/notes'
+    const { id, body, editNote} = props
 
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     const handleUpdate = (body) => {
-        axios.put(`https://challenge.leadjet.io/example123/notes/${props.id}`, body)
+        axios.put(API_URL+`/${props.id}`, body)
             .then((response) => {
                 const result = response.data
-                updateNote(result.id, result.body)
+                editNote(result.id, result.body)
             })
             .catch((err) => {
                 alert(err.message)
@@ -27,10 +27,9 @@ const Note = (props) => {
     }
 
     return(
-        <div className="note">
-            {/* <h1>{title}</h1> */}
+        <div class="note">
             <span>{body}</span>
-            <div className="note-footer">
+            <div class="note-footer">
                 <Button 
                     class="button-edit"
                     onClick={handleShow} 
@@ -40,6 +39,7 @@ const Note = (props) => {
             <Dialog open={show} onClose={handleClose}>
                 <EditNote 
                     key={id}
+                    text={body}
                     handleUpdate={handleUpdate}
                     handleClose={handleClose}
                 />
