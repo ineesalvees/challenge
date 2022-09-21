@@ -1,14 +1,3 @@
-# About this Project
-This project intends to create a simple implementation of a taking notes system using a provided API. 
-
-With this app you can:
-- create a new note;
-- edit a note you created earlier.
-
-Due to some limitations in the API, another implementation is under construction and can be found in the `notes2` folder. This new implementation allows you to create, edit, and delete notes. The structure of a note was also changed to reflect a more accurate note. Therefore, it also has a `title` and a `date` fields.
-
----
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
