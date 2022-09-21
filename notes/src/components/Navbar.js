@@ -8,7 +8,7 @@ import axios from 'axios'
 import AddNote from './AddNote'
 
 const Navbar = (props) =>{
-    const API_URL = 'https://challenge.leadjet.io/blablabla/notes'
+    const API_URL = 'https://challenge.leadjet.io/inesalves/notes'
     const { addNote } = props
 
     const [show, setShow] = useState(false);

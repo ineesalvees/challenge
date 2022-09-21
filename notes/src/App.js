@@ -6,7 +6,7 @@ import NotesList from './components/NotesList';
 import Navbar from "./components/Navbar"
 
 const App = () => {
-  const API_URL = 'https://challenge.leadjet.io/blablabla/notes'
+  const API_URL = 'https://challenge.leadjet.io/inesalves/notes'
 
   const [allNotes, setAllNotes] = useState([])
 

@@ -8,7 +8,7 @@ import axios from 'axios'
 import EditNote from './EditNote';
 
 const Note = (props) => {
-    const API_URL = 'https://challenge.leadjet.io/blablabla/notes'
+    const API_URL = 'https://challenge.leadjet.io/inesalves/notes'
     const { id, body, editNote} = props
 
     const [show, setShow] = useState(false);
